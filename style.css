@@ -37,7 +37,7 @@ body {
     background: url(./images/bg-card-front.png);
     background-position-x: right;
     width: 370px;
-    height: 200px;
+    /* height: 200px; */
     border-radius: 10px;
     box-shadow: 0px -1px 5px -2px black;
     align-self: center;
@@ -61,6 +61,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-inline: 20px;
+    margin-bottom: 10px;
 }
 
 .container .card .front-card div span {
@@ -72,7 +73,7 @@ body {
 
 .container .card .back-card {
     width: 370px;
-    height: 200px;
+    padding-block: 100px;
     border-radius: 10px;
     background: url(./images/bg-card-back.png);
     background-size: cover;
@@ -83,7 +84,7 @@ body {
 .container .card .back-card p {
     width: fit-content;
     position: absolute;
-    top: 38%;
+    top: 36.5%;
     right: 40px;
     font-size: 16px;
     color: white;
@@ -274,8 +275,8 @@ body {
 
     .container .card .front-card {
         width: 280px;
-        height: 18vh;
         order: 2;
+        padding-block: 10px;
     }
 
     .container .card .front-card img {
@@ -294,7 +295,11 @@ body {
 
     .container .card .back-card {
         width: 280px;
-        height: 18vh;
+        padding-block: 71px;
+    }
+
+    .container .card .back-card p {
+        top: 35%;
     }
 
     .container .form .content {
