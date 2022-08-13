@@ -27,7 +27,10 @@ body {
 .container .card {
     width: 40%;
     background: url(./images/bg-main-desktop.png) no-repeat;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
 }
 
 .container .card .front-card {
@@ -36,10 +39,8 @@ body {
     width: 370px;
     height: 200px;
     border-radius: 10px;
-    position: absolute;
-    top: 150px;
-    left: 200px;
     box-shadow: 0px -1px 5px -2px black;
+    align-self: center;
 }
 
 .container .card .front-card img {
@@ -75,10 +76,8 @@ body {
     border-radius: 10px;
     background: url(./images/bg-card-back.png);
     background-size: cover;
-    position: absolute;
-    bottom: 150px;
-    left: 250px;
     box-shadow: 0px -1px 5px -2px black;
+    position: relative;
 }
 
 .container .card .back-card p {
@@ -261,8 +260,11 @@ body {
     }
 
     .container .card {
-        height: 35vh;
         width: initial;
+        padding-block: 15px;
+        gap: 15px;
+        align-items: center;
+        background-size: cover;
     }
 
     .container .form {
@@ -273,10 +275,7 @@ body {
     .container .card .front-card {
         width: 280px;
         height: 18vh;
-        left: 10%;
-        top: initial;
-        z-index: 2;
-        bottom: 5px;
+        order: 2;
     }
 
     .container .card .front-card img {
@@ -296,10 +295,6 @@ body {
     .container .card .back-card {
         width: 280px;
         height: 18vh;
-        bottom: initial;
-        left: 20%;
-        z-index: 1;
-        top: 5px;
     }
 
     .container .form .content {
